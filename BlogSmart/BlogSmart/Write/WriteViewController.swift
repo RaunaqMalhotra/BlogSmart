@@ -125,6 +125,7 @@ class WriteViewController: UIViewController {
             "temperature": 0.7
         ]
         let jsonData = try? JSONSerialization.data(withJSONObject: json)
+        print("hello")
 
         // Use the URL to instantiate a request
         request.httpBody = jsonData
