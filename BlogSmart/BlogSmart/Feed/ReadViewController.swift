@@ -171,7 +171,8 @@ class ReadViewController: UIViewController {
             }
             return shouldShowPopup
         }
-        return true // Allow other segues to proceed as usual
+        // Allow other segues to proceed as usual
+        return true
     }
 }
 
