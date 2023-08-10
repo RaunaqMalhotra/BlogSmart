@@ -13,6 +13,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     private enum Constants {
         static let loginNavigationControllerIdentifier = "LoginNavigationController"
         static let readNavigationControllerIdentifier = "ReadNavigationController"
+        static let writeNavigationControllerIdentifier  = "WriteNavigationController"
         static let storyboardIdentifier = "Main"
     }
 
@@ -35,6 +36,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         NotificationCenter.default.addObserver(forName: Notification.Name("Go back to the initial screen"), object: nil, queue: OperationQueue.main) { [weak self] _ in
             self?.completePost()
+        }
+        
+        NotificationCenter.default.addObserver(forName: Notification.Name("Navigate to write screen"), object: nil, queue: OperationQueue.main) { [weak self] _ in
+            self?.writePost()
         }
 
         // Check for cached user for persisted log in.
@@ -75,6 +80,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     private func completePost() {
         let storyboard = UIStoryboard(name: Constants.storyboardIdentifier, bundle: nil)
         self.window?.rootViewController = storyboard.instantiateViewController(withIdentifier: Constants.readNavigationControllerIdentifier)
+    }
+    
+    private func writePost() {
+        let storyboard = UIStoryboard(name: Constants.storyboardIdentifier, bundle: nil)
+        self.window?.rootViewController = storyboard.instantiateViewController(withIdentifier: Constants.writeNavigationControllerIdentifier)
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

@@ -27,6 +27,11 @@ class DetailViewController: UIViewController, MFMailComposeViewControllerDelegat
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        if User.current == nil {
+            blogMenu.isEnabled = false
+            blogMenu.width = 0
+        }
+        
         // Make sure the user cannot block themselves!
         if let currentUser = User.current,
            let postUser = self.post.user {

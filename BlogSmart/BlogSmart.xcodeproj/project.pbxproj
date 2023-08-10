@@ -20,6 +20,7 @@
 		AF202F1E29E88A1700D18F2C /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = AF202F1D29E88A1700D18F2C /* Alamofire */; };
 		AF202F2129E88A2E00D18F2C /* ParseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AF202F2029E88A2E00D18F2C /* ParseSwift */; };
 		AF202F2429E88A4A00D18F2C /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = AF202F2329E88A4A00D18F2C /* AlamofireImage */; };
+		AF2D10512A81A39500160E5D /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2D10502A81A39500160E5D /* TabBarController.swift */; };
 		AFA3139729FA22B4003719FE /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA3139629FA22B4003719FE /* PostCell.swift */; };
 		AFA3139929FA2A5B003719FE /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA3139829FA2A5B003719FE /* Post.swift */; };
 		AFAD94482A007BF900510528 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAD94472A007BF900510528 /* DetailViewController.swift */; };
@@ -42,6 +43,7 @@
 		AF202F1129E889E800D18F2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF202F1429E889E800D18F2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF202F1629E889E800D18F2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF2D10502A81A39500160E5D /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		AFA3139629FA22B4003719FE /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		AFA3139829FA2A5B003719FE /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		AFAD94472A007BF900510528 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				BA1BA4F229EA532A00E13CDC /* Models */,
 				AF202F0829E889E600D18F2C /* AppDelegate.swift */,
 				AF202F0A29E889E600D18F2C /* SceneDelegate.swift */,
+				AF2D10502A81A39500160E5D /* TabBarController.swift */,
 				AF202F0E29E889E600D18F2C /* Main.storyboard */,
 				AF202F1129E889E800D18F2C /* Assets.xcassets */,
 				AF202F1329E889E800D18F2C /* LaunchScreen.storyboard */,
@@ -246,6 +249,7 @@
 				AFAD94482A007BF900510528 /* DetailViewController.swift in Sources */,
 				BA1BA4F129EA503A00E13CDC /* LoginViewController.swift in Sources */,
 				A22881E429FB5DD2007F48B9 /* WriteViewController.swift in Sources */,
+				AF2D10512A81A39500160E5D /* TabBarController.swift in Sources */,
 				A22881EA29FCC824007F48B9 /* GPTResponse.swift in Sources */,
 				AF202F0D29E889E600D18F2C /* ReadViewController.swift in Sources */,
 				A27AC8B829EC31450011E378 /* SignUpViewController.swift in Sources */,

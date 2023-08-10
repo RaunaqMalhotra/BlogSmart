@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KO2-EE-8Rz">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="O6n-RH-BgU">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -314,7 +314,7 @@ These are everything a chocolate chip cookie should be. Crispy and chewy. Doughy
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qfZ-yn-dOy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2684.7328244274809" y="188.73239436619718"/>
+            <point key="canvasLocation" x="2676" y="712"/>
         </scene>
         <!--Read View Controller-->
         <scene sceneID="iFQ-te-6CH">
@@ -423,13 +423,14 @@ These are everything a chocolate chip cookie should be. Crispy and chewy. Doughy
                             <imageReference key="landscapeImage" image="square.and.pencil" catalog="system" symbolScale="large"/>
                             <color key="tintColor" systemColor="tintColor"/>
                             <connections>
-                                <segue destination="XNQ-Xp-qBI" kind="show" id="Baa-2h-cbL"/>
+                                <segue destination="XNQ-Xp-qBI" kind="show" identifier="writeSegue" id="STA-10-cel"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="blogTable" destination="8eU-aH-Q5Q" id="JmK-8k-G3B"/>
+                        <outlet property="loggingButton" destination="WoH-Fy-z8v" id="rQM-Rf-Mpl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rSk-hl-N5G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -517,7 +518,7 @@ These are everything a chocolate chip cookie should be. Crispy and chewy. Doughy
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IOx-mz-Wgu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3457.2519083969464" y="711.97183098591552"/>
+            <point key="canvasLocation" x="2676" y="1562"/>
         </scene>
         <!--Read-->
         <scene sceneID="7CQ-qv-80M">
@@ -545,7 +546,7 @@ These are everything a chocolate chip cookie should be. Crispy and chewy. Doughy
         <!--Tab Bar Controller-->
         <scene sceneID="ujz-bb-2M6">
             <objects>
-                <tabBarController storyboardIdentifier="ReadNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="ad5-Fs-eO3" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="ReadNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="ad5-Fs-eO3" customClass="TabBarController" customModule="BlogSmart" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="UCF-bz-kZA">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
@@ -560,7 +561,7 @@ These are everything a chocolate chip cookie should be. Crispy and chewy. Doughy
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UKh-UO-EOR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-164.12213740458014" y="711.97183098591552"/>
+            <point key="canvasLocation" x="-164" y="695"/>
         </scene>
         <!--Settings-->
         <scene sceneID="wge-ln-esJ">
@@ -654,7 +655,7 @@ These are everything a chocolate chip cookie should be. Crispy and chewy. Doughy
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QGJ-jf-f6j" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1664.885496183206" y="1561.9718309859156"/>
+            <point key="canvasLocation" x="763" y="1562"/>
         </scene>
         <!--Write-->
         <scene sceneID="5HP-5r-ExM">
@@ -677,7 +678,7 @@ These are everything a chocolate chip cookie should be. Crispy and chewy. Doughy
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6vn-uN-foa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3205.3435114503814" y="1545.7746478873239"/>
+            <point key="canvasLocation" x="1689" y="1562"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="d5O-FF-jLh">
@@ -714,11 +715,11 @@ These are everything a chocolate chip cookie should be. Crispy and chewy. Doughy
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YVe-ce-S0i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="738.16793893129773" y="1561.9718309859156"/>
+            <point key="canvasLocation" x="-164" y="1562"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Baa-2h-cbL"/>
+        <segue reference="STA-10-cel"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="book" catalog="system" width="128" height="99"/>
