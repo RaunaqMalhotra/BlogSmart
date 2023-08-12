@@ -129,7 +129,10 @@ class ReadViewController: UIViewController {
     @IBAction func onLogOutDidTapped(_ sender: Any) {
         if User.current != nil {
             showConfirmLogoutAlert()
+        } else {
+            NotificationCenter.default.post(name: Notification.Name("logout"), object: nil)
         }
+        
     }
     
     private func showConfirmLogoutAlert() {
