@@ -21,6 +21,7 @@
 		AF202F2129E88A2E00D18F2C /* ParseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AF202F2029E88A2E00D18F2C /* ParseSwift */; };
 		AF202F2429E88A4A00D18F2C /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = AF202F2329E88A4A00D18F2C /* AlamofireImage */; };
 		AF2D10512A81A39500160E5D /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2D10502A81A39500160E5D /* TabBarController.swift */; };
+		AF4A55412A85AA6300D64921 /* TermsAndConditionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4A55402A85AA6300D64921 /* TermsAndConditionsViewController.swift */; };
 		AFA3139729FA22B4003719FE /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA3139629FA22B4003719FE /* PostCell.swift */; };
 		AFA3139929FA2A5B003719FE /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA3139829FA2A5B003719FE /* Post.swift */; };
 		AFAD94482A007BF900510528 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAD94472A007BF900510528 /* DetailViewController.swift */; };
@@ -44,6 +45,7 @@
 		AF202F1429E889E800D18F2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF202F1629E889E800D18F2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF2D10502A81A39500160E5D /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		AF4A55402A85AA6300D64921 /* TermsAndConditionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsAndConditionsViewController.swift; sourceTree = "<group>"; };
 		AFA3139629FA22B4003719FE /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		AFA3139829FA2A5B003719FE /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		AFAD94472A007BF900510528 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 		AF202F0729E889E600D18F2C /* BlogSmart */ = {
 			isa = PBXGroup;
 			children = (
+				AF4A55402A85AA6300D64921 /* TermsAndConditionsViewController.swift */,
 				A2C1DA2B2A37D8BE00A24C93 /* Settings */,
 				AFAD94462A007BD500510528 /* Detail */,
 				A22881E229FB5DBF007F48B9 /* Write */,
@@ -254,6 +257,7 @@
 				AF202F0D29E889E600D18F2C /* ReadViewController.swift in Sources */,
 				A27AC8B829EC31450011E378 /* SignUpViewController.swift in Sources */,
 				BA1BA4F929EA57F200E13CDC /* DateFormatter+Extensions.swift in Sources */,
+				AF4A55412A85AA6300D64921 /* TermsAndConditionsViewController.swift in Sources */,
 				AF202F0929E889E600D18F2C /* AppDelegate.swift in Sources */,
 				AFA3139729FA22B4003719FE /* PostCell.swift in Sources */,
 				A2C1DA2D2A37D8D500A24C93 /* SettingsViewController.swift in Sources */,

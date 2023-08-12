@@ -6,17 +6,37 @@
 //
 
 import UIKit
+import SafariServices
 
 class SignUpViewController: UIViewController {
 
     @IBOutlet weak var usernameField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     @IBOutlet weak var emailField: UITextField!
+    @IBOutlet weak var termsLabel: UILabel!
+    @IBOutlet weak var termsCheckBox: UIButton!
+    @IBOutlet weak var startBloggingButton: UIButton!
+    
+    let uncheckedButton = UIImage(systemName: "square")
+    let checkedButton = UIImage(systemName: "checkmark.square.fill")
+    
+    var isChecked: Bool = false {
+        didSet {
+            if isChecked == true {
+                termsCheckBox.setImage(checkedButton, for: UIControl.State.normal)
+                startBloggingButton.backgroundColor = UIColor.systemOrange
+                startBloggingButton.isEnabled = true
+            } else {
+                termsCheckBox.setImage(uncheckedButton, for: UIControl.State.normal)
+                startBloggingButton.backgroundColor = UIColor.systemGray
+                startBloggingButton.isEnabled = false
+            }
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        termsLabel.isUserInteractionEnabled = true
     }
     
     
@@ -29,6 +49,11 @@ class SignUpViewController: UIViewController {
               !email.isEmpty,
               !password.isEmpty else {
             showMissingFieldsAlert()
+            return
+        }
+        
+        if !isChecked {
+            self.showAgreeTermsAlert()
             return
         }
         
@@ -51,8 +76,30 @@ class SignUpViewController: UIViewController {
         }
     }
     
+    @IBAction func didTapTerms(_ sender: Any) {
+        
+        let pdfURLString = "https://docs.google.com/document/d/1GaM34KZhNrLTLb6JIpL-PFhHa-fohwHm3JOVUhNGBos"
+        
+        if let pdfURL = URL(string: pdfURLString) {
+            let safariViewController = SFSafariViewController(url: pdfURL)
+            present(safariViewController, animated: true, completion: nil)
+        }
+    }
+    
+    
+    @IBAction func didTapTermsCheckbox(_ sender: Any) {
+        isChecked = !isChecked
+    }
+    
     private func showMissingFieldsAlert() {
-        let alertController = UIAlertController(title: "Opps...", message: "We need all fields filled out in order to sign you up.", preferredStyle: .alert)
+        let alertController = UIAlertController(title: "Oops...", message: "We need all fields filled out in order to sign you up.", preferredStyle: .alert)
+        let action = UIAlertAction(title: "OK", style: .default)
+        alertController.addAction(action)
+        present(alertController, animated: true)
+    }
+    
+    private func showAgreeTermsAlert() {
+        let alertController = UIAlertController(title: "Agree to Terms and Conditions", message: "Please agree to the terms and conditions by checking the box to finish signing up", preferredStyle: .alert)
         let action = UIAlertAction(title: "OK", style: .default)
         alertController.addAction(action)
         present(alertController, animated: true)
