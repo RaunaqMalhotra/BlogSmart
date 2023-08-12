@@ -52,11 +52,6 @@ class SignUpViewController: UIViewController {
             return
         }
         
-        if !isChecked {
-            self.showAgreeTermsAlert()
-            return
-        }
-        
         var newUser = User()
         newUser.username = username
         newUser.email = email
@@ -93,13 +88,6 @@ class SignUpViewController: UIViewController {
     
     private func showMissingFieldsAlert() {
         let alertController = UIAlertController(title: "Oops...", message: "We need all fields filled out in order to sign you up.", preferredStyle: .alert)
-        let action = UIAlertAction(title: "OK", style: .default)
-        alertController.addAction(action)
-        present(alertController, animated: true)
-    }
-    
-    private func showAgreeTermsAlert() {
-        let alertController = UIAlertController(title: "Agree to Terms and Conditions", message: "Please agree to the terms and conditions by checking the box to finish signing up", preferredStyle: .alert)
         let action = UIAlertAction(title: "OK", style: .default)
         alertController.addAction(action)
         present(alertController, animated: true)
