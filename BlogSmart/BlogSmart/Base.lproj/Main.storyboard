@@ -106,7 +106,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Myp-rF-nk0" userLabel="Main Stack View">
-                                <rect key="frame" x="16" y="261" width="361" height="330.33333333333326"/>
+                                <rect key="frame" x="16" y="200.99999999999997" width="361" height="330.33333333333326"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="i5f-Qt-NSx">
                                         <rect key="frame" x="0.0" y="0.0" width="361" height="330.33333333333331"/>
@@ -180,7 +180,7 @@
                                                 </subviews>
                                             </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nE7-zt-KC0">
-                                                <rect key="frame" x="114.33333333333336" y="290.33333333333337" width="132.66666666666663" height="40"/>
+                                                <rect key="frame" x="114.33333333333336" y="290.33333333333331" width="132.66666666666663" height="40"/>
                                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
@@ -207,7 +207,7 @@
                         <viewLayoutGuide key="safeArea" id="ATa-iL-UvE"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Myp-rF-nk0" firstAttribute="centerY" secondItem="Bgv-V8-PyW" secondAttribute="centerY" id="IeT-vy-dZf"/>
+                            <constraint firstItem="Myp-rF-nk0" firstAttribute="centerY" secondItem="Bgv-V8-PyW" secondAttribute="centerY" constant="-60" id="IeT-vy-dZf"/>
                             <constraint firstItem="Myp-rF-nk0" firstAttribute="centerX" secondItem="Bgv-V8-PyW" secondAttribute="centerX" id="Yyh-2A-GUM"/>
                         </constraints>
                     </view>

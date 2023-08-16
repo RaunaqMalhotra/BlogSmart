@@ -21,6 +21,7 @@ class WriteViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.hideKeyboardWhenTappedAround()
 
         // Default blog image
         blogImage.image = UIImage(named: "default_image")
