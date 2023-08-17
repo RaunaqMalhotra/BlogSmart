@@ -411,7 +411,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 7LABUL5Q4J;
+				DEVELOPMENT_TEAM = AC42G26957;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BlogSmart/Info.plist;
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Hi there! Looks like you want to upload a picture. In order to do that, you will need to grant access to this app to use photos from your photo library. Please grant access below.";
@@ -425,8 +425,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = BlogSmart;
+				MARKETING_VERSION = 1.1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = RaunaqMalhotra.BlogSmart;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -441,7 +441,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 7LABUL5Q4J;
+				DEVELOPMENT_TEAM = AC42G26957;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BlogSmart/Info.plist;
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Hi there! Looks like you want to upload a picture. In order to do that, you will need to grant access to this app to use photos from your photo library. Please grant access below.";
@@ -455,8 +455,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = BlogSmart;
+				MARKETING_VERSION = 1.1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = RaunaqMalhotra.BlogSmart;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

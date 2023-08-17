@@ -77,9 +77,9 @@ class SignUpViewController: UIViewController {
         let pdfURLString = "https://docs.google.com/document/d/1GaM34KZhNrLTLb6JIpL-PFhHa-fohwHm3JOVUhNGBos"
         
         if let pdfURL = URL(string: pdfURLString) {
-            let safariViewController = SFSafariViewController(url: pdfURL)
+            let safariViewController = SFSafariViewController(url: pdfURL)
             present(safariViewController, animated: true, completion: nil)
-        }
+        }
     }
     
     
